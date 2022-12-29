@@ -1,9 +1,4 @@
  
-function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to our website</h1>
- 
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "scenes/homePage";
 import LoginPage from "scenes/loginPage";
