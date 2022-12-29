@@ -62,7 +62,8 @@ const res = mongoose
   }).then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-    /* ADD DATA ONE TIME */
+    /* ADD DATA ONE TIME Only when starting server first time so that this dont duplicate in each run
+      better approach could be you comment out these two lines after first rerun*/
     // User.insertMany(users);
     // Post.insertMany(posts);
   })
