@@ -1,19 +1,28 @@
 # LinkedUp
-Full Stack Social Media Web Application, 
-Currently we are working on it........
+ ### Full stack Social media web app that facilitates the sharing of ideas, thoughts, and information through the building of virtual networks
 
 
-
-# Tech Stacks Used:
-We used MongoDB, Express Js, React Js Node.js , Redux-toolkit Material-UI, formik, Yup, redux-persist, jwt,
-Git-Hub for building this Project .We also used tools like Github for hosting our project, Slack & Zoom as means of a communication channel.
+* ## Frontend By Surjesh Yadav 
+LinkdIn:- https://www.linkedin.com/in/surjeshyadav/
 
 
+## Tech Stacks and Packages which are Used in Frontend:
+* Javascript- Programming Language 
+* React js- Frontend Library 
+* React-Router- For Navigation
+* Material Ui- For UI design
+* Formik- For form handling
+* Yup- For Form Validation 
+* Redux-Tookit- For State Management 
+* Redux-Persist- For Local Storage
+* React Dropzone- For handling the dragging and dropping of files.
 
 
-## contributer Backend (Arman)
+# Contributer Backend (Arman Rasool)
+* Github:- https://github.com/Arman091
+* Linkedin:- https://www.linkedin.com/in/arman-rasool-b74b04194/
 
-#### packages and tech stack used
+## Tech Stacks and Packages which are Used in Backend
 * mongoose
 * mongodb
 * express
