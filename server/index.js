@@ -18,12 +18,12 @@ import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 /* CONFIGURATIONS */
-
-dotenv.config();
+mongoose.set('strictQuery', false)
+dotenv.config(); 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
-app.use(express.json());
+app.use(express.json()); 
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
@@ -53,7 +53,8 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
-let url = `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@cluster0.rkx2xm3.mongodb.net/Linkedup?retryWrites=true&w=majority`;
+let url = process.env.MONGO_URL
+// let url = `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@cluster0.rkx2xm3.mongodb.net/Linkedup?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 6001;
 const res = mongoose
   .connect(url, {
